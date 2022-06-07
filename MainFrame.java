@@ -27,24 +27,20 @@ public class MainFrame extends JFrame {
 		lblProcessed.setBounds(40, 60, 700, 80);
 		mainPane.add(lblProcessed);
 
-		txt_a = new JTextField();
-		txt_a.setText("");
-		txt_a.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		txt_a.setBounds(100, 180, 400, 50);
-		txt_a.setColumns(10);
-		mainPane.add(txt_a);
+		JLabel lbl_a = new JLabel("1. Place holder text");
+		lbl_a.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lbl_a.setBounds(40, 180, 460, 50);
+		mainPane.add(lbl_a);
 
-		txt_b = new JTextField();
-		txt_b.setText("");
-		txt_b.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		txt_b.setBounds(100, 300, 400, 50);
-		txt_b.setColumns(10);
-		mainPane.add(txt_b);
+		JLabel lbl_b = new JLabel("2. Place holder text");
+		lbl_b.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lbl_b.setBounds(40, 300, 460, 50);
+		mainPane.add(lbl_b);
 
-		JButton btn_a = new JButton("NEW PARCEL");
-		btn_a.setFont(new Font("Tahoma", Font.BOLD, 20));
-		btn_a.setBounds(1000, 120, 200, 100);
-		mainPane.add(btn_a);
+		JButton btn_parcel = new JButton("NEW PARCEL");
+		btn_parcel.setFont(new Font("Tahoma", Font.BOLD, 20));
+		btn_parcel.setBounds(1000, 120, 200, 100);
+		mainPane.add(btn_parcel);
 
 		JButton btn_logout = new JButton("LOG OUT");
 		btn_logout.setFont(new Font("Tahoma", Font.BOLD, 20));
@@ -57,5 +53,15 @@ public class MainFrame extends JFrame {
 			}
 		});
 		mainPane.add(btn_logout);
+		
+		JButton btn_del = new JButton("Delivery Request");
+		btn_del.setFont(new Font("Tahoma", Font.BOLD, 19));
+		btn_del.setBounds(1000, 360, 200, 80);
+		mainPane.add(btn_del);
+		
+		JButton btn_inf = new JButton("Parcel Info");
+		btn_inf.setFont(new Font("Tahoma", Font.BOLD, 20));
+		btn_inf.setBounds(1000, 480, 200, 80);
+		mainPane.add(btn_inf);
 	}
 }
